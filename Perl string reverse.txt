@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+
+my $reverse_str = <>;
+
+chomp($reverse_str);
+
+print "Original value is $reverse_str\n";
+print "Reversed value is ", scalar reverse("$reverse_str"), "\n";
