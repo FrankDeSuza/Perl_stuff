@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+my $dirname = '.';
+
+opendir(DIR, $dirname) or die "Could not open $dirname\n";
+
+while ($filename = readdir(DIR)) {
+  print "$filename\n";
+}
+
+closedir(DIR);
