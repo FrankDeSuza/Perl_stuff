@@ -1,0 +1,22 @@
+#!usr/bin/local/perl
+
+my $high = <>;
+
+chomp($high);
+
+for (my $i = 1; $i <= $high; $i++)
+{
+   print fibonacci($i), "\n";
+}
+
+sub fibonacci
+{
+   my $number = shift;  
+
+   if ($number <= 0) 
+   { 
+      return($number);
+   } 
+
+   return (fibonacci($number - 1) + fibonacci($number - 2));
+}
